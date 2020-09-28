@@ -14,8 +14,14 @@ body {
   color: #fff;
   position: relative;
   background: transparent;
-}
 
+  background-image: url("../img/Fondo6.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+/*
 body::before {
   content: "";
   position: fixed;
@@ -27,9 +33,19 @@ body::before {
   height: 1024px;
   z-index: -1;
 }
-
+*/
 @media (min-width: 1024px) {
   body::before {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 480px) {
+  body {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 768px) {
+  body {
     background-attachment: fixed;
   }
 }
